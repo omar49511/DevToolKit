@@ -1,12 +1,10 @@
 import reflex as rx
 
-from DevToolKit.navigation import navbar
 from DevToolKit.template import template
 
 @template
 def register() -> rx.Component:
     return rx.box(
-            navbar(heading="register"),
             rx.box(
                 rx.text("esta es la pagina del registro", background="#f00", padding="1em 2em", as_="span",),
                 margin_top="calc(50px + 2em)",

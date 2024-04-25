@@ -5,7 +5,8 @@ from DevToolKit.template import template
 
 @template
 def tools() -> rx.Component:
-    return rx.box(
+    return rx.center(
+        rx.box(
             navbar(heading="Tools"),
             rx.box(
                 rx.text("placeholder"),
@@ -14,3 +15,4 @@ def tools() -> rx.Component:
             ),
             padding_left="250px",
         )
+    )

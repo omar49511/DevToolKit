@@ -3,7 +3,7 @@ from typing import Callable
 import reflex as rx
 
 from DevToolKit.navigation import dashboard_sidebar
-from DevToolKit.styles import BACKGROUND_COLOR, FONT_FAMILY
+from DevToolKit.styles.styles import BACKGROUND_COLOR, FONT_FAMILY
 
 
 def template(page: Callable[[], rx.Component]) -> rx.Component:

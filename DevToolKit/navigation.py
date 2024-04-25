@@ -1,7 +1,7 @@
 import reflex as rx
 from reflex.components import lucide
 
-from DevToolKit.styles import FONT_FAMILY
+from DevToolKit.styles.styles import FONT_FAMILY
 
 
 def sidebar_link(text: str, href: str, icon: str):
