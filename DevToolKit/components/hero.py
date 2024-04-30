@@ -4,7 +4,7 @@ from DevToolKit.styles.styles import FONT_FAMILY
 
 
 def hero():
-    return rx.box(
+    return rx.section(
         rx.hstack(
             rx.center(
                 rx.vstack(

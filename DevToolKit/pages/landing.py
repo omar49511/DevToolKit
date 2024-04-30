@@ -1,13 +1,14 @@
 import reflex as rx
 from DevToolKit.components.hero import hero 
+from DevToolKit.components.feature import feature
+from DevToolKit.components.overview import overview
+from DevToolKit.components.TagStream import TagStream
 
 @rx.page(route="/")
 def landing():
     return rx.vstack(
-        rx.box(
-            rx.center(
-                hero(),
-            ),
-            width="100%",
-        ),
+        hero(),
+        feature(),
+        overview(),
+        TagStream()
     )
