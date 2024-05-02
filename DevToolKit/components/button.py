@@ -5,10 +5,11 @@ def render_submit_button(name: str, event: rx.State):
     return rx.hstack(
         rx.button(
             rx.text(name),
-            color_scheme="#864e75",
+            color_scheme="purple",
             on_click=event,
-            width="100%"
+            width="100%",
+            height="100%"
         ),
         style=button_stylesheet,
-        padding= "0.5rem 0rem",
+        padding= "1rem 0rem",
     )

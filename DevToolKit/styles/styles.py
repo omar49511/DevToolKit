@@ -5,7 +5,7 @@ from .colors import  TextColors
 
 BASE_STYLE = {
     "color": TextColors.TEXT.value,
-    "width":"100%",
+    "width":"100vw",
     "display": "flex",
     "flex_direction": "column",
     "align_items": "center",
@@ -19,21 +19,20 @@ BACKGROUND_COLOR = "#000000"
 
 
 general_stylesheet: dict={
-    "width": ["100%", "100%", "70%", "50%", "35%"],
-    "padding": ["0rem 2rem"],
+    "width": ["90%", "90%", "70%", "50%", "35%"],
     "transition": "all 550ms ease",
     "display": "flex",
     "justify_content": "center",
     "align_items": "start",
 }
 
-input_stylesheet: dict={
+input_stylesheet: dict ={
     **general_stylesheet,
 }
 
 button_stylesheet: dict={
     **general_stylesheet,
-    "height": "45px"
+    "height": "75px"
 }
 
 auth_pages_stylesheet: dict={

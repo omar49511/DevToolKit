@@ -27,12 +27,12 @@ class Categories(rx.State):
 
 def tag(tags: str):
     return rx.text(tags, color="#fff", 
-            as_="span", 
-            bg="#121212",
-            padding="1rem 2rem",
-            borderRadius="10px",
-            box_shadow="0px 5px 5px 0px rgb(0,0,0,0.5);",
-        )
+        as_="span", 
+        bg="#121212",
+        padding="1rem 2rem",
+        borderRadius="10px",
+        box_shadow="0px 5px 5px 0px rgb(0,0,0,0.5);",
+    )
         
     
 
