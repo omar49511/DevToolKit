@@ -7,8 +7,8 @@ from DevToolKit.components.TagStream import TagStream
 @rx.page(route="/")
 def landing():
     return rx.vstack(
-        hero(),
-        feature(),
-        overview(),
-        TagStream()
-    )
+            hero(),
+            feature(),
+            overview(),
+            TagStream()
+    ),

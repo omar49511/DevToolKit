@@ -5,18 +5,15 @@ from .colors import  TextColors
 
 BASE_STYLE = {
     "color": TextColors.TEXT.value,
-    "width":"100vw",
+    "max_width":"80%",
+    "margin": "0 auto",
     "display": "flex",
     "flex_direction": "column",
     "align_items": "center",
     "justify_content": "center",
 }
 
-STYLESHEETS = ["https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"]
-
-FONT_FAMILY = "Share Tech Mono"
 BACKGROUND_COLOR = "#000000"
-
 
 general_stylesheet: dict={
     "width": ["90%", "90%", "70%", "50%", "35%"],

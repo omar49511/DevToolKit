@@ -15,7 +15,10 @@ app = rx.App(
         has_background=True,
         radius="large",
         accent_color="teal",
-    )
+    ),
+    stylesheets=[
+        "/fonts/myfont.css",  # This path is relative to assets/
+    ],
 )
 
 app.add_page(register, route="/register")
