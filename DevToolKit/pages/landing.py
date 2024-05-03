@@ -8,7 +8,7 @@ from DevToolKit.components.TagStream import TagStream
 def landing():
     return rx.vstack(
             hero(),
-            feature(),
             overview(),
+            feature(),
             TagStream()
     ),

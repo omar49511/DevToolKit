@@ -12,13 +12,12 @@ def hero():
                 ),
             ),
             rx.box(
-                rx.center(
-                    rx.image(src="fox.png", width="20em", height="auto"),
-                ),
+                rx.image(src="fox.png", width="20em", height="auto"),
+                display="flex",
+                justify_content="end",
             ),
             columns="2",
             padding="0 5rem",
         ),
-        background = "linear-gradient(0deg, rgb(16, 18, 17) 10%, rgba(58,58,62,1) 90%)"
-
+        # background = "linear-gradient(0deg, rgb(16, 18, 17) 10%, rgba(58,58,62,1) 90%)"
     )
