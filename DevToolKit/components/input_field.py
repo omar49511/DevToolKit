@@ -9,16 +9,15 @@ def render_input_field(
 ):
     return rx.vstack(
         rx.text(title),
-        rx.chakra.input(
+        rx.input(
             value=value,
             on_change=update,
             type="password" if is_password else "text",
-            width="100%",
-            size='lg',
             height="2.5rem",
             box_shadow="0px 4px 4px 0px rgb(0,0,0,0.3);",
             background_color="#18181B",
             padding="1rem",
+            width="100%",
         ),
         style=input_stylesheet,
         spacing="2"

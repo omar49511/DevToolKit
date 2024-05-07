@@ -1,5 +1,5 @@
 import reflex as rx
-from DevToolKit.states import State, RegisterState
+from DevToolKit.states import State, RegisterState, Registration
 from DevToolKit.components.input_field import render_input_field
 from DevToolKit.styles.styles import auth_pages_stylesheet
 from DevToolKit.components.button import render_submit_button
@@ -30,11 +30,11 @@ def register():
         ),
         render_input_field(
             title="Contraseña",
-            is_password=False,
+            is_password=True,
             value= RegisterState.password,
             update= RegisterState.update_password
         ),
-        render_submit_button(name="Login", event=State.void_event),
+        render_submit_button(name="Login", event=Registration.user_registration),
         rx.text(
             "Ya tienes una cuenta? Click ",
             rx.link("Aquí.", href="/login"),

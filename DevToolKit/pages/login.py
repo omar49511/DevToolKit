@@ -2,7 +2,7 @@ import reflex as rx
 from DevToolKit.styles.styles import auth_pages_stylesheet
 from DevToolKit.components.input_field import render_input_field
 from DevToolKit.components.button import render_submit_button
-from DevToolKit.states import State, LoginState
+from DevToolKit.states import State, LoginState, Authentication
 @rx.page(route="/login")
 def login():
     return rx.vstack(
@@ -22,11 +22,11 @@ def login():
         ),
         render_input_field(
             title="Contraseña",
-            is_password=False,
+            is_password=True,
             value= LoginState.password,
             update= LoginState.update_password
         ),
-        render_submit_button(name="Login", event=State.void_event),
+        render_submit_button(name="Login", event=Authentication.user_login),
         rx.text(
             "No tienes una cuenta? Click ",
             rx.link("Aquí.", href="/register"),
